@@ -48,8 +48,8 @@
     <main.basedir>${project.basedir}</main.basedir>
 
     <!-- This allows you to test feature branches with jitpack -->
-    <armeria.groupId>com.linecorp.armeria</armeria.groupId>
-    <armeria.version>0.92.0</armeria.version>
+    <armeria.groupId>com.github.trustin.armeria</armeria.groupId>
+    <armeria.version>spring_boot_optional_dropwizard-SNAPSHOT</armeria.version>
     <!-- This should only be used in tests, and be careful to avoid >= v20 apis -->
     <guava.version>28.0-jre</guava.version>
 
@@ -109,6 +109,13 @@
     <name>OpenZipkin</name>
     <url>http://zipkin.io/</url>
   </organization>
+
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
 
   <licenses>
     <license>

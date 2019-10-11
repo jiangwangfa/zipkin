@@ -11,10 +11,14 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-export { treeCorrectedForClockSkew } from './clock-skew';
-export { getServiceName } from './span-row';
-export {
-  traceSummary,
-  traceSummaries,
-  detailedTraceSummary,
-} from './trace';
+package zipkin2.elasticsearch;
+
+import static org.mockito.Mockito.mock;
+
+/** opens package access for testing */
+public final class Access {
+  // saves on http response mocking, which is already tested in zipkin-storage-elasticsearch
+  public static void pretendIndexTemplatesExist(ElasticsearchStorage storage) {
+    storage.indexTemplates = mock(IndexTemplates.class); // assume index templates called before
+  }
+}

@@ -1,1 +1,1 @@
-spring.profiles.include: shared
+spring.profiles.include: shared,param

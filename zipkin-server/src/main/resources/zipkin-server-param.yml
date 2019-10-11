@@ -1,0 +1,3 @@
+STORAGE_TYPE: elasticsearch
+ES_HOSTS: localhost:9200
+

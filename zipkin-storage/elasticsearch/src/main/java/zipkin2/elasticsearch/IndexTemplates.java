@@ -18,7 +18,7 @@ import com.google.auto.value.AutoValue;
 @AutoValue
 abstract class IndexTemplates {
   static Builder newBuilder() {
-    return new AutoValue_IndexTemplates.Builder();
+    return new zipkin2.elasticsearch.AutoValue_IndexTemplates.Builder();
   }
 
   abstract float version();
